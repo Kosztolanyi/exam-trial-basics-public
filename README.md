@@ -125,6 +125,6 @@ Then we can scale it with arithmetic operations ('*', '+', '-' etc.) and we can 
 
 ### What is a ternary operator? How does it work?
 
-The ternary operation is kind of a shorthand for an if statement in JS.
+The ternary operator is kind of a shorthand for an if statement in JS.
 
 Syntax: 'condition' ? 'result if condition is met' : 'result if condition is not met'
