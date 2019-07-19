@@ -37,7 +37,7 @@ test('testing Pirate party method', (t: any) => {
     t.end();
 });
 
-test('testing Pirate party method', (t: any) => {
+test('testing Pirate toString method', (t: any) => {
     let testPirate = new Pirate('Jack', 100, true, false);
     t.equals(testPirate.toString(), '- Hello, I\'m Jack. I still have my real legs and 100 gold.');
     let testPirate2 = new Pirate('Maria', 50, false, true);
