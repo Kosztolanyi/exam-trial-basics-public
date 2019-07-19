@@ -24,6 +24,10 @@ export default class Ship {
         }
     }
 
+    getPirates(): Pirate[] {
+        return this.pirates;
+    }
+
     getPoorPirates(): string[] {
         let output: string[] = [];
         this.pirates.forEach(value => {
