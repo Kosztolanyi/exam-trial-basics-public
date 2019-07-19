@@ -120,8 +120,11 @@ Write a program which can store pirates in a ship.
 
 ### How can you generate a random number?
 
-*type your answer here*
+In JS we can generate a random number on the [0, 1) set with Math.random().
+Then we can scale it with arithmetic operations ('*', '+', '-' etc.) and we can use Math.floor(), .round() or .ceil() if we need integers only.
 
 ### What is a ternary operator? How does it work?
 
-*type your answer here*
+The ternary operation is kind of a shorthand for an if statement in JS.
+
+Syntax: 'condition' ? 'result if condition is met' : 'result if condition is not met'
