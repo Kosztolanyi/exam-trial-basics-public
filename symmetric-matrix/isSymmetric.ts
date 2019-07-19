@@ -26,3 +26,5 @@ const isSymmetric = (inputMatrix: number[][]): boolean => {
         return true;
     }
 }
+
+export default isSymmetric;
