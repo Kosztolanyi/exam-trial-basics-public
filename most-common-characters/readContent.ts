@@ -1,7 +1,5 @@
 'use strict';
 
-import { exists } from "fs";
-
 const fs = require('fs');
 
 let readContent = (fileName: string): string => {
