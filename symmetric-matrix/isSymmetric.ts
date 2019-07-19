@@ -15,16 +15,17 @@ const isSymmetric = (inputMatrix: number[][]): boolean => {
                 console.log('please provide symmetric matrix');
                 return undefined;
             }
-            else {
-                for (let j: number = 0; j < inputMatrix[i].length; j++) {
-                    if (inputMatrix[i][j] != inputMatrix[j][i]) {
-                        return false;
-                    }
+        }
+        for (let i: number = 0; i < inputMatrix.length; i++) {
+            for (let j: number = 0; j < inputMatrix[i].length; j++) {
+                if (inputMatrix[i][j] != inputMatrix[j][i]) {
+                    return false;
                 }
             }
         }
-        return true;
     }
+    return true;
 }
+
 
 export default isSymmetric;
