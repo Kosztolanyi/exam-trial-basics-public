@@ -15,6 +15,22 @@ export default class Pirate {
         this.hasWoodenLeg = woodenleg;
     }
 
+    getName(): string {
+        return this.name;
+    }
+
+    getCaptainProp(): boolean {
+        return this.isCaptain;
+    }
+
+    getWoodenLegProp(): boolean {
+        return this.hasWoodenLeg;
+    }
+
+    getGoldAmount(): number {
+        return this.goldAmount;
+    }
+
     work() {
         if (this.isCaptain) {
             this.goldAmount += 10;
