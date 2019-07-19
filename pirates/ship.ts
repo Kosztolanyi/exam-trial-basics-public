@@ -31,6 +31,10 @@ export default class Ship {
         return this.pirates;
     }
 
+    getCaptainExists(): boolean {
+        return this.hasCaptain;
+    }
+
     getPoorPirates(): string[] {
         let output: string[] = [];
         this.pirates.forEach(value => {
