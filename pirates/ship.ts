@@ -12,7 +12,10 @@ export default class Ship {
     }
 
     addPirate(input: Pirate) {
-        if (input.getCaptainProp() && this.hasCaptain) {
+        if (JSON.stringify(input) == '{}'){
+            console.log('Cannot add: invalid pirate input!');
+        }
+        else if (input.getCaptainProp() && this.hasCaptain) {
             console.log('Ship already has a captain!');
         }
         else if (input.getCaptainProp()) {

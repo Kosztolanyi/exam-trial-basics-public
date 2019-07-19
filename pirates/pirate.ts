@@ -8,11 +8,20 @@ export default class Pirate {
     private hasWoodenLeg: boolean;
 
     constructor(name: string, gold: number, captain: boolean, woodenleg: boolean) {
-        this.name = name;
-        this.goldAmount = gold;
-        this.healthPoints = 10;
-        this.isCaptain = captain;
-        this.hasWoodenLeg = woodenleg;
+
+        if (name == '') {
+            console.log('Please provide pirate name');
+        }
+        else if (gold < 0) {
+            console.log('Starting gold cannot be negative.');
+        }
+        else {
+            this.name = name;
+            this.goldAmount = gold;
+            this.healthPoints = 10;
+            this.isCaptain = captain;
+            this.hasWoodenLeg = woodenleg;
+        }
     }
 
     getName(): string {
@@ -29,6 +38,10 @@ export default class Pirate {
 
     getGoldAmount(): number {
         return this.goldAmount;
+    }
+
+    getHealthPoints(): number {
+        return this.healthPoints;
     }
 
     work() {
