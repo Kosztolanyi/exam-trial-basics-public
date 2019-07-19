@@ -1,6 +1,10 @@
 'use strict';
 
 let countChars = (input: string): Map<string, number> => {
+    if (input == undefined) {
+        return undefined;
+    }
+    
     let output = new Map();
 
     for (let i = 0; i < input.length; i++) {
