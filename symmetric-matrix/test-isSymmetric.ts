@@ -1,6 +1,6 @@
 'use strict';
 
-import test from 'tape';
+import test = require ('tape');
 import isSymmetric from './isSymmetric';
 
 test('testing invalid input error handling', (t: any) => {
