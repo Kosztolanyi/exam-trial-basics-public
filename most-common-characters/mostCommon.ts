@@ -1,15 +1,13 @@
 'use strict';
 
 let mostCommon = (input: Map<string, number>): Map<string, number> => {
-    while(input.size > 2){
-        for (let i of input){
-            for (let j of input){
-                if (i[1] > j[1]){
-                    input.delete(j[0]);
-                }
+    input.forEach((value: number) => {
+        input.forEach((value2: Number, key2: string) => {
+            if (value > value2 && input.size > 2) {
+                input.delete(key2);
             }
-        }
-    }
+        })
+    })
     return input;
 }
 

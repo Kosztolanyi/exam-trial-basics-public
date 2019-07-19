@@ -4,12 +4,12 @@ const fs = require('fs');
 
 let readContent = (fileName: string): string => {
     try {
-        if (!fs.existsSync(fileName)){
+        if (!fs.existsSync(fileName)) {
             console.log('Error: file doesn\'t exist.');
             return undefined;
         }
         else {
-        return fs.readFileSync(fileName, 'utf-8');
+            return fs.readFileSync(fileName, 'utf-8');
         }
     }
     catch (error) {
