@@ -12,7 +12,7 @@ const isSymmetric = (inputMatrix: number[][]): boolean => {
     else {
         for (let i: number = 0; i < inputMatrix.length; i++) {
             if (inputMatrix.length != inputMatrix[i].length) {
-                console.log('please provide symmetric matrix');
+                console.log('please provide n x n  matrix');
                 return undefined;
             }
         }

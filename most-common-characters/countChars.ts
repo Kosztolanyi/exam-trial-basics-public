@@ -7,7 +7,7 @@ let countChars = (input: string): Map<string, number> => {
     
     let output = new Map();
 
-    for (let i = 0; i < input.length; i++) {
+    for (let i: number = 0; i < input.length; i++) {
         if (output.has(input.charAt(i))) {
             output.set(input.charAt(i), output.get(input.charAt(i)) + 1);
         }
